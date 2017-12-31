@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class SanityCheckTest {
     @Test
     public void matrix2x3() throws Exception {
         ReadMatrix mat = new ReadMatrix();
