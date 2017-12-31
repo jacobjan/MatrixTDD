@@ -1,12 +1,12 @@
-Find the shortest distance in matrix.  Start from leftmost column traverse through adjcent rows
-till the distance ( values of element in matirx ) greater than preset limit ( 50 in our examle )
+Find the shortest cost in matrix.  Start from leftmost column traverse through adjacent rows
+till the cost ( values of element in matirx ) greater than preset limit ( 50 in our examle )
 or reach the destination ( rightmost column ).
 
 To run test:
 
 app > src > test, right click on 'MatrixShortestPathTest' then Run it.
 
-The test files are in project root folder in format:
+The test data files are in project root folder in format:
 
 n ( row )
 m ( column )
