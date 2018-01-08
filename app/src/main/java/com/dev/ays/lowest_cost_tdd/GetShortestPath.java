@@ -97,7 +97,10 @@ public class GetShortestPath {
             } else {
                 leastSumOf(getRow(row), col + 1, path, cSum);
             }
+<<<<<<< HEAD:app/src/main/java/com/dev/ays/lowest_cost_tdd/GetShortestPath.java
 
+=======
+>>>>>>> 85acc734358f9f9ce5ef016f5775090d9ccf8cfc:app/src/main/java/com/dev/ays/matrixtdd/GetShortestPath.java
         }
     }
 
