@@ -85,9 +85,16 @@ public class GetShortestPath {
         if ( col+1 == Column-1 ) {
             leastSumOf(getRow(row), col + 1, path, cSum);
         } else {
-            leastSumOf(getRow(row - 1), col + 1, path, cSum);
-            leastSumOf(getRow(row), col + 1, path, cSum);
-            leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            if ( Row > 2 ) {
+                leastSumOf(getRow(row - 1), col + 1, path, cSum);
+                leastSumOf(getRow(row), col + 1, path, cSum);
+                leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            } else if ( Row == 2 ) {
+                leastSumOf(getRow(row), col + 1, path, cSum);
+                leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            } else {
+                leastSumOf(getRow(row), col + 1, path, cSum);
+            }
         }
     }
 
