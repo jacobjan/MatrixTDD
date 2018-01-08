@@ -1,4 +1,4 @@
-package com.dev.ays.matrixtdd;
+package com.dev.ays.lowest_cost_tdd;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,8 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.dev.ays.matrixtdd", appContext.getPackageName());
+        assertEquals("com.dev.ays.lowest_cost_tdd", appContext.getPackageName());
     }
+
+
 }

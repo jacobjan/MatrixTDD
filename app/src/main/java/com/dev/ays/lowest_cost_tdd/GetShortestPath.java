@@ -1,10 +1,11 @@
-package com.dev.ays.matrixtdd;
+package com.dev.ays.lowest_cost_tdd;
+
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -19,6 +20,7 @@ public class GetShortestPath {
     private int Row, Column, leastSum=Integer.MAX_VALUE, numCol=0;
     private boolean LT_MAX_DISTANCE = true;
     String res = "";
+    public final String TAG = "LowestCostTest";
     Map<String, Integer> pathMap = new HashMap<>();
     Map<String, Integer> midPath = new HashMap<>();
 
@@ -85,9 +87,17 @@ public class GetShortestPath {
         if ( col+1 == Column-1 ) {
             leastSumOf(getRow(row), col + 1, path, cSum);
         } else {
-            leastSumOf(getRow(row - 1), col + 1, path, cSum);
-            leastSumOf(getRow(row), col + 1, path, cSum);
-            leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            if ( Row > 2 ) {
+                leastSumOf(getRow(row - 1), col + 1, path, cSum);
+                leastSumOf(getRow(row), col + 1, path, cSum);
+                leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            } else if ( Row == 2 ) {
+                leastSumOf(getRow(row), col + 1, path, cSum);
+                leastSumOf(getRow(row + 1), col + 1, path, cSum);
+            } else {
+                leastSumOf(getRow(row), col + 1, path, cSum);
+            }
+
         }
     }
 

@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">MatrixTDD</string>
+    <string name="app_name">LowestCostPath</string>
     <string name="action_settings">Settings</string>
+    <string name="run_test">Run All Tests</string>
+    <string name="clearTextview">clear Result</string>
+    <string name="rawfiles_spinner_prompt">Select file to test</string>
 </resources>

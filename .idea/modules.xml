@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MatrixTDD.iml" filepath="$PROJECT_DIR$/MatrixTDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LowestCostMatrix.iml" filepath="$PROJECT_DIR$/LowestCostMatrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
